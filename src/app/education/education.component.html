@@ -1,1 +1,10 @@
-<p>education works!</p>
+<ul *ngFor="let edu of education">
+  <li>
+    <strong>{{ edu.degree }}</strong><br>
+    {{ edu.fieldOfStudy }}<br>
+    {{ edu.institution }}<br>
+    {{ edu.startDate }} - {{ edu.endDate }}<br>
+    <b>Logros:</b><br>
+    {{ edu.accomplishments }}<br>
+  </li>
+</ul>

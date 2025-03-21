@@ -1,1 +1,6 @@
-<p>interests works!</p>
+<ul>
+  <li *ngFor="let interest of interests">
+    <strong>{{ interest.interestName }}</strong><br>
+    {{ interest.description }}<br>
+  </li>
+</ul>

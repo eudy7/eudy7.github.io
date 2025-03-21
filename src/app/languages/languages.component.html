@@ -1,1 +1,7 @@
-<p>languages works!</p>
+<ul>
+  <li *ngFor="let lang of languages">
+    <strong>{{ lang.name }}</strong><br>
+    Nivel: {{ lang.proficiency }}<br>
+    Certificación: {{ lang.certification }}<br>
+  </li>
+</ul>
