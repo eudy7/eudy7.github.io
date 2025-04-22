@@ -1,9 +1,9 @@
-<div class="cv-section">
-  <h3>Certificados</h3>
-  <div *ngFor="let cert of certificates" class="cert-item">
-    <h4>{{ cert.name }}</h4>
-    <p *ngIf="cert.issuingOrganization">Emitido por: {{ cert.issuingOrganization }}</p>
-    <p *ngIf="cert.issueDate">Fecha de emisión: {{ cert.issueDate }}</p>
-    <p *ngIf="cert.expirationDate">Fecha de vencimiento: {{ cert.expirationDate }}</p>
+<section class="cv-section">
+  <h3 class="cv-section-title">Certificados</h3>
+  <div *ngFor="let cert of certificates">
+    <p><strong>{{ cert.name }}</strong></p>
+    <p>Emitido por: {{ cert.issuingOrganization }}</p>
+    <p>Fecha de emisión: {{ cert.issueDate }}</p>
+    <p>Fecha de vencimiento: {{ cert.expirationDate }}</p>
   </div>
-</div>
+</section>

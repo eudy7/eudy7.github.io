@@ -1,11 +1,10 @@
-<div class="cv-section">
-  <h3>Educación</h3>
-  <div *ngFor="let edu of education" class="edu-item">
-    <h4>{{ edu.degree }}</h4>
-    <p class="field">{{ edu.fieldOfStudy }}</p>
-    <p class="institution">{{ edu.institution }}</p>
-    <p class="dates">{{ edu.startDate }} - {{ edu.endDate }}</p>
-    <p class="logros-title">Logros:</p>
-    <p class="logros">{{ edu.accomplishments }}</p>
+<section class="cv-section">
+  <h3 class="cv-section-title">Educación</h3>
+  <div *ngFor="let edu of education">
+    <p><strong>{{ edu.degree }}</strong></p>
+    <p>{{ edu.fieldOfStudy }}</p>
+    <p>{{ edu.institution }}</p>
+    <p>{{ edu.startDate }} - {{ edu.endDate }}</p>
+    <p><strong>Logros:</strong> {{ edu.accomplishments }}</p>
   </div>
-</div>
+</section>

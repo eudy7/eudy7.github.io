@@ -1,8 +1,8 @@
-<div class="cv-section">
-  <h3>Habilidades</h3>
-  <div *ngFor="let sk of skills" class="skill-item">
-    <h4>{{ sk.skillName }}</h4>
-    <p><strong>Nivel:</strong> {{ sk.proficiency }}</p>
-    <p *ngIf="sk.description">{{ sk.description }}</p>
+<section class="cv-section">
+  <h3 class="cv-section-title">Habilidades</h3>
+  <div *ngFor="let sk of skills">
+    <p><strong>{{ sk.skillName }}</strong></p>
+    <p>Nivel: {{ sk.proficiency }}</p>
+    <p>{{ sk.description }}</p>
   </div>
-</div>
+</section>
