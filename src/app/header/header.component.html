@@ -1,14 +1,15 @@
-<tr>
-  <td>
-    {{header?.name}} <br>
-    {{header?.goalLife}}
-  </td>
-  <td>
-    <img [src]="header?.photoUrl" width="200" height="200" alt="Mi Foto">
-    <br>
-    {{header?.email}}<br>
-    {{header?.phoneNumber}}<br>
-    {{header?.location}}<br>
-    {{header?.socialNetwork}}
-  </td>
-</tr>
+<div class="cv-header">
+  <div class="photo-info-container">
+    <img class="cv-photo" [src]="header?.photoUrl" alt="Foto de perfil">
+    <div class="cv-info">
+      <h2>{{ header?.name }}</h2>
+      <p class="cv-title">{{ header?.goalLife }}</p>
+      <div class="cv-contact">
+        <p><i class="fa fa-envelope"></i> {{ header?.email }}</p>
+        <p><i class="fa fa-phone"></i> {{ header?.phoneNumber }}</p>
+        <p><i class="fa fa-map-marker"></i> {{ header?.location }}</p>
+        <p><i class="fa fa-at"></i> {{ header?.socialNetwork }}</p>
+      </div>
+    </div>
+  </div>
+</div>

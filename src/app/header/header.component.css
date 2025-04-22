@@ -1,0 +1,30 @@
+.photo-info-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cv-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.cv-info h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cv-title {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.cv-contact p {
+  margin: 3px 0;
+  font-size: 14px;
+}

@@ -1,9 +1,8 @@
-<ul>
-  <li *ngFor="let sk of skills">
-    <strong>{{ sk.skillName }}</strong> 
-    <br>
-    Nivel: {{ sk.proficiency }}
-    <br>
-    {{ sk.description }}
-  </li>
-</ul>
+<div class="cv-section">
+  <h3>Habilidades</h3>
+  <div *ngFor="let sk of skills" class="skill-item">
+    <h4>{{ sk.skillName }}</h4>
+    <p><strong>Nivel:</strong> {{ sk.proficiency }}</p>
+    <p *ngIf="sk.description">{{ sk.description }}</p>
+  </div>
+</div>

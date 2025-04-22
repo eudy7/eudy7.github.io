@@ -1,7 +1,8 @@
-<ul>
-  <li *ngFor="let lang of languages">
-    <strong>{{ lang.name }}</strong><br>
-    Nivel: {{ lang.proficiency }}<br>
-    Certificación: {{ lang.certification }}<br>
-  </li>
-</ul>
+<div class="cv-section">
+  <h3>Idiomas</h3>
+  <div *ngFor="let lang of languages" class="lang-item">
+    <h4>{{ lang.name }}</h4>
+    <p>Nivel: {{ lang.proficiency }}</p>
+    <p *ngIf="lang.certification">Certificación: {{ lang.certification }}</p>
+  </div>
+</div>

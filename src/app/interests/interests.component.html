@@ -1,6 +1,7 @@
-<ul>
-  <li *ngFor="let interest of interests">
-    <strong>{{ interest.interestName }}</strong><br>
-    {{ interest.description }}<br>
-  </li>
-</ul>
+<div class="cv-section">
+  <h3>Intereses</h3>
+  <div *ngFor="let interest of interests" class="interest-item">
+    <h4>{{ interest.interestName }}</h4>
+    <p *ngIf="interest.description">{{ interest.description }}</p>
+  </div>
+</div>

@@ -1,22 +1,14 @@
-<table border="1">
+<div class="cv-container">
+  <div class="cv-sidebar">
+    <app-header></app-header>
+    <app-interests></app-interests> 
+  </div>
 
-  <tr>
-    <td colspan="2"> <app-header></app-header> </td>
-  </tr>
-  
-  <tr>
-    <td> <app-work-experience></app-work-experience> </td>
-    <td> <app-skills></app-skills> </td>
-  </tr>
-
-  <tr>
-    <td> <app-education></app-education> </td>
-    <td> <app-certificates></app-certificates> </td>
-  </tr>
-
-  <tr>
-    <td> <app-languages></app-languages> </td>
-    <td> <app-interests></app-interests> </td>
-  </tr>
-
-</table>
+  <div class="cv-main">
+    <app-work-experience></app-work-experience>
+    <app-education></app-education>
+    <app-certificates></app-certificates>
+    <app-languages></app-languages>
+    <app-skills></app-skills>
+  </div>
+</div>
