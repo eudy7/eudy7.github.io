@@ -1,30 +1,37 @@
-.photo-info-container {
+.cv-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
+  text-align: center;
+  gap: 10px;
+  padding-top: 10px;
 }
 
 .cv-photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
+  border-radius: 50%;
   border: 3px solid white;
 }
 
-.cv-info h2 {
-  margin: 0;
-  font-size: 20px;
+.cv-name {
+  font-size: 18px;
   font-weight: bold;
+  color: white;
+  margin: 0;
 }
 
 .cv-title {
-  font-size: 14px;
+  font-size: 13px;
   font-style: italic;
-  margin-bottom: 10px;
+  color: #ccc;
+  margin: 0;
 }
 
 .cv-contact p {
-  margin: 3px 0;
-  font-size: 14px;
+  font-size: 12px;
+  margin: 0;
+  color: #ddd;
+  line-height: 1.4;
 }
